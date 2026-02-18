@@ -53,5 +53,11 @@ This project builds a machine learning system to estimate ride prices based on t
 * Regression model accurately predicts continuous ride prices, while classification model effectively distinguishes high-cost rides.
 * Data cleaning, encoding, and scaling were critical to model performance.
 * Synthetic dataset limitations: may not fully capture real-world variations; small size and missing features affect generalization.
+---
+
+## 📊Feedback and Grading of the project from my Mentor
+
+<img width="486" height="528" alt="image" src="https://github.com/user-attachments/assets/94910b0e-fc6e-4a17-9f0b-a783a95ebd8b" />
+<img width="431" height="482" alt="image" src="https://github.com/user-attachments/assets/9b98b1f2-7a97-4943-8332-3dca18584e50" />
 
 
