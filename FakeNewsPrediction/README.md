@@ -1,37 +1,86 @@
+# 🧠 Fake News Detection using Neural Network
 
-# Fake News Detection Using Neural Network
+## 📌 Project Overview
+This project builds a Neural Network model to classify news headlines as **Fake** or **Real**.  
+The model learns patterns from text data using Natural Language Processing (NLP) techniques and predicts whether a given headline is trustworthy.
 
-Assignment project: Building a feedforward neural network to classify news headlines as Real (0) or Fake (1).
+---
 
-## Dataset
-- File: `FakeNewsData.csv`
-- ~4000 samples, balanced classes
-- Using **title** column only (article text is placeholder → no information)
+## 🎯 Objective
+- Input: News headline (text)
+- Output:
+  - 0 → Real News
+  - 1 → Fake News
 
-## Technologies
+---
+
+## 🧩 Project Steps
+
+### 1. Data Loading & Exploration
+- Loaded dataset using Pandas
+- Checked dataset structure and class distribution
+
+### 2. Text Preprocessing
+- Converted text into numerical form using:
+  - TF-IDF Vectorization
+- Cleaned and prepared text data
+
+### 3. Data Splitting
+- Training set: 80%
+- Testing set: 20%
+
+### 4. Model Building
+- Built a Feedforward Neural Network with:
+  - Input Layer
+  - Hidden Layer (128 neurons)
+  - Hidden Layer (64 neurons)
+  - Output Layer (1 neuron)
+
+### 5. Training
+- Loss Function: Binary Crossentropy
+
+### 6. Evaluation
+- Measured model performance using:
+  - Accuracy
+  - Loss
+
+### 7. Testing
+- Tested model on new custom headlines
+
+---
+
+## ⚙️ Technologies Used
 - Python
-- Pandas, Scikit-learn (TF-IDF)
-- TensorFlow / Keras (Neural Network)
-- Google Colab
+- Pandas
+- NumPy
+- Scikit-learn
+- TensorFlow / Keras
 
-## Model Architecture
-- Input (TF-IDF features) → Dense(128, ReLU) → Dropout(0.3) → Dense(64, ReLU) → Dropout(0.3) → Dense(1, Sigmoid)
-- Loss: Binary Crossentropy
-- Optimizer: Adam (lr=0.001)
-- Epochs: 20
+---
 
-## Results
-- Test Accuracy: ~50% (expected due to synthetic dataset with generic titles)
-- Limitation: Titles are "Breaking News 1/2/..." → no real patterns to learn
 
-## How to Run
-1. Open in Google Colab: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([https://colab.research.google.com/github/YOUR_USERNAME/fake-news-detection/blob/main/notebooks/Fake_News_Detection_Neural_Network.ipynb](https://colab.research.google.com/drive/1zPk3ETqeiVktiviqONR3QLC_Qx1QjEN-?usp=sharing))
+## 🔗 Project Links
+- Google Colab Notebook:  
+  https://colab.research.google.com/drive/1VbN27fAKUAf1_Nq-w2AX_WVq_ERP0tmb?usp=sharing
 
-3. Run all cells
+---
 
-## Answers to Assignment Questions
-- **Architecture**: Feedforward NN with 2 hidden layers (128 + 64 neurons)
-- **Epochs**: 20
-- **Activations**: ReLU (hidden), Sigmoid (output)
-- **Accuracy**: ~50% on test set (random baseline due to dataset nature)
+## 💡 Example Predictions
 
+| Headline | Prediction |
+|--------|-----------|
+| Scientists confirm water on Mars | Real |
+| Aliens have landed in New York | Fake |
+
+---
+
+## 🚀 Future Improvements
+- Try more hidden layers
+- Experiment with different neurons
+- Compare with other ML models (SVM, Logistic Regression)
+- Use advanced models like LSTM or BERT
+
+---
+
+## 👤 Author
+- Negasi
